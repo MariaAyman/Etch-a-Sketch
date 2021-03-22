@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 170vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://data.whicdn.com/images/351820866/original.jpg?t=1609165708');                
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+h1{
+    width: 50%;
+    margin: 2% auto;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #fff;
+}
+
+.grid-options{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-clear{
+    width: 10%;
+    height: 60%;
+    margin-right: 2%;
+}
+
+.grid-clear button{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    font-family: 'Mountains of Christmas', cursive;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out,
+                box-shadow .3s ease-in-out;
+}
+.grid-clear button:hover{
+    box-shadow: 0 0 6px #fff;
+    transform: scale(1.1);
+}
+
+.grid-size{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-size p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2%;
+    text-shadow: 0 0 2px #fff;
+}
+.grid-size p span input{
+    width: 15%;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 6px #fff;
+    line-height: 20px;
+    margin-left: 2%;
+    background: blue;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.2rem;
+}
+.grid-size .size-range{
+    /*overflow: hidden;*/
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    background-color: blue;
+    outline: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+.grid-size .size-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*Grid Container*/
+.grid-container{
+    border: 8px solid blue;
+    width: 50vw;
+    height: 50vw;
+    margin: 4% auto;
+    position: relative;
+    box-shadow: 0 0 10px #fff;
+}
+
+.grid-container .container{
+    background: #fff;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
